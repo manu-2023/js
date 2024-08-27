@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const fruits=["Mango","Apple","Jack Fruit"];
+        document.write(fruits+"<br>");//Displays
+
+        //push
+        fruits.push("Lime");
+        document.write(fruits+"<br>");
+
+        //Deletes the last element
+        fruits.pop();
+        document.write(fruits+"<br>");
+
+        //at used to access the element using index
+        document.write(fruits.at(1)+"<br>");
+
+        //Shift gives the first element and pops
+        const shiftt=fruits.shift();
+        document.write(shiftt+"<br>");
+
+        //Adds n number of value in front of an array
+        fruits.unshift("KIWI","BANANA");
+        document.write(fruits+"<br>");
+
+        //Splice add, remove, replace
+        fruits.splice(2,1,"Mango","Cherry");//from index value 2 remove 1 element and add my value
+        document.write(fruits+"<br>");
+
+        //slice
+        const newarr=fruits.slice(2);
+        document.write("Sliced array  :  ",newarr+"<br>");
+
+        //sort 
+        fruits.sort();
+        document.write("Sorted Array :  ",fruits+"<br>")
+        fruits.reverse();
+        document.write(" Reverse Sorted Array  :  ",fruits+"<br>");
+
+        //join Separator
+        c = fruits.join(" m ");
+        document.write("Joined m in each elament  :  ",c +"<br>");
+
+
+        //delete
+        delete fruits[0];//only values get deleted wont reduce size 
+        document.write(" Deleted : " , fruits+"<br>");
+
+        //concat
+        a1="PES ";
+        a2="University";
+        a3=a1+a2;
+        document.write("Conacatinated  :  ",a3,"<br>");
+
+
+        arr1=["A", "B" ,"C"];
+        arr2=["1","2","3"];
+        const combined=arr1.concat(arr2);
+        document.write (combined);
+
+
+    </script>
+</body>
+</html>

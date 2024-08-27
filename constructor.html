@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Data(name,age,state){
+            this.name=name;
+            this.age=age;
+            this.state=state;
+            this.view=display(this.name,this.age,this.state);
+        }
+        function display(n1,a1,st1){
+                document.write(n1+" ",a1+" ",st1 +"</br>");
+        }
+        const person1= new Data("Jasim",18,"Kerala");
+        const person2= new Data("Ravi",18,"Karnataka");
+    </script>
+</body>
+</html>

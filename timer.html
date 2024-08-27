@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //setTimeout only executes once
+        setTimeout(man,5000);//first argument is function name, sec is time in mili second
+        function man(){
+            document.write("Timeout </br>");
+
+        }
+
+
+        //setInterval executes every defined time
+        var time = setInterval(man1,1000);//first argument is function name, sec is time in mili second
+            function man1(){
+            document.write("Interval </br>");
+
+        }
+
+        //clearInterval
+        setTimeout (function(){clearInterval(time)},10000);//clears interval time after 10 sec
+    </script>
+    
+</body>
+</html>

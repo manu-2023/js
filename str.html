@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //String
+        var a1="Hello World";
+
+
+        //Returns the value at index 0
+        a=a1.charAt(0);
+        document.write(a+"<br>");
+
+
+        //charCodeAt returns unique code
+        b=a1.charCodeAt(0);
+        document.write(b+"<br>");
+
+
+        //slice from index 
+        c=a1.slice(1,7);
+        document.write(c+"<br>");
+
+        //substring
+        e=a1.substring(1,7);//index 1 to index 2
+        d=a1.substr(1,7);//1st parameter is from which index to start 2nd is length
+        document.write(d+"<br>");
+        document.write(e+"<br>");
+
+
+        //uppercasee
+        document.write(a1.toUpperCase()+"<br>");
+        //lowerscase
+        document.write(a1.toLowerCase()+"<br>");
+        
+        //concat
+        var a2="                                                          Welcome";
+        document.write(a2+"</br>");
+
+        var a3=a1.concat(a2);
+        document.write(a3+"</br>");
+
+        //trims white space
+        var a4 = a2.trim();
+        console.log(a4);
+        document.write(a4);
+
+
+
+    </script>
+</body>
+</html>
