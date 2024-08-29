@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+ 
+    <p id="root"></p>
+    <p id="root1"></p>
+    <h4 class="hh">H444</h4>
+    <h4 class="hm">H444</h4>
+    <h4 class="hm">H444</h4>
+    <h4 class="hm">H444</h4>
+    <h6>H6</h6>
+    <h1 class="hh1">HELLO</h1>
+    
+    <script>
+        document.getElementById("root").innerHTML="MAN<br>";//changes value in p tag with html tags working
+        document.getElementById("root1").innerText="SELF<br>";//changes value in p tag without html tags working
+        document.getElementsByClassName("hh")[0].innerHTML="H4";
+        document.getElementsByClassName("hm")[2].innerHTML="H5";
+        document.getElementsByTagName("h6")[0].innerHTML="h6<br>";
+
+        const node=document.querySelectorAll("h1");
+        for(let i = 0; i <node.length; i++){
+            node[i].style.backgroundColor = "cyan";
+        }
+    </script>   
+</body>
+</html>
